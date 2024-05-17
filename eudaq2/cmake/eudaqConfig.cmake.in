@@ -1,0 +1,9 @@
+@PACKAGE_INIT@
+
+set_and_check(EUDAQ_INCLUDE_DIRS "@PACKAGE_EUDAQ_INCLUDE_DIRS@")
+set_and_check(EUDAQ_LIBRARIES_DIRS "@PACKAGE_EUDAQ_LIBRARIES_DIRS@")
+
+# Our library dependencies (contains definitions for IMPORTED targets)
+include("${CMAKE_CURRENT_LIST_DIR}/eudaqTargets.cmake")
+
+set(EUDAQ_LIBRARIES "@CONF_EUDAQ_LIBRARIES@")

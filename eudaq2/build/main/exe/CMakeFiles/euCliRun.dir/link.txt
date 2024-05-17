@@ -1,0 +1,1 @@
+/usr/bin/c++ -O2 -g -DNDEBUG -rdynamic CMakeFiles/euCliRun.dir/src/euCliRun.cxx.o -o euCliRun  -Wl,-rpath,/home/isis/eudaq2/build/main/lib/core: ../lib/core/libeudaq_core.so.2.6 -lstdc++fs -ldl 

@@ -1,0 +1,18 @@
+include_directories(include)
+
+# library
+if(USER_EUDET_BUILD)
+  list(APPEND USER_HARDWARE_SRC src/NiController.cc)
+endif()
+
+if(USER_EUDET_BUILD)
+  add_library(${USER_HARDWARE_LIBRARY} STATIC ${USER_HARDWARE_SRC})
+  target_link_libraries(${USER_HARDWARE_LIBRARY} ${EUDAQ_CORE_LIBRARY} ${USER_HARDWARE_DEP_LIB})
+  list(APPEND INSTALL_TARGETS ${USER_HARDWARE_LIBRARY})
+endif()
+# end library
+
+install(TARGETS ${INSTALL_TARGETS}
+  RUNTIME DESTINATION bin
+  LIBRARY DESTINATION lib
+  ARCHIVE DESTINATION lib)

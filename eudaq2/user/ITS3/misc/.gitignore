@@ -1,0 +1,5 @@
+*.conf
+*.ini
+logs
+*/
+!conf_examples/

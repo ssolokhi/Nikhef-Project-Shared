@@ -1,0 +1,18 @@
+{
+    "VBB_PARAM": [
+        [0.0, [30, 50, 70, 90, 110, 130, 150] ],
+        [1.2, [100, 150, 200, 250, 300, 350, 400] ],
+        [3.0, [200, 250, 300, 350, 400, 450, 500] ]
+    ],
+    "param": "VCASB",
+    "VBB_Settings": {
+        "0.0": {"vcasb": 100, "vcasn": 150, "ireset": 10, "idb": 10, "ibias": 10, "ibiasn": 10},
+        "1.2": {"vcasb": 100, "vcasn": 250, "ireset": 20, "idb": 15, "ibias": 20, "ibiasn": 20},
+        "3.0": {"vcasb": 100, "vcasn": 400, "ireset": 30, "idb": 20, "ibias": 30, "ibiasn": 30}
+    },
+    "data_path": "/path/to/data/",
+    "ID": "TEMPLATE",
+    "ANGLES": [0, 10, 20, 30, 46, 60],
+    "trg_x_offset_60deg": 150,
+    "trg_x_pos_base": 13556.265750
+}

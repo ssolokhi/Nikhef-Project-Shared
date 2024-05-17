@@ -1,0 +1,2 @@
+/usr/bin/ar qc libeudet_static.a CMakeFiles/eudet_static.dir/src/NiController.cc.o
+/usr/bin/ranlib libeudet_static.a

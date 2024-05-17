@@ -1,0 +1,1 @@
+/usr/bin/c++ -O2 -g -DNDEBUG -rdynamic CMakeFiles/euCliMergerStandardTrigID.dir/src/euCliMergerStandardTrigID.cxx.o -o euCliMergerStandardTrigID  -Wl,-rpath,/home/isis/eudaq2/build/main/lib/core: ../../../main/lib/core/libeudaq_core.so.2.6 -lstdc++fs -ldl 

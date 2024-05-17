@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O2 -g -DNDEBUG  -Wl,--no-undefined -shared -Wl,-soname,libeudaq_module_adeniumConverter.so -o libeudaq_module_adeniumConverter.so CMakeFiles/eudaq_module_adeniumConverter.dir/AdeniumRaw2StdEventConverter.cpp.o  -Wl,-rpath,/home/isis/eudaq2/build/main/lib/core: ../../main/lib/core/libeudaq_core.so.2.6 -lstdc++fs -ldl 
