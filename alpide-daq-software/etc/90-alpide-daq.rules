@@ -1,0 +1,5 @@
+# FX3 bootloader
+SUBSYSTEM=="usb"       , ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="00f3", MODE="0666", GROUP="dialout"
+
+# ALPIDE DAQ FW
+SUBSYSTEM=="usb"       , ATTRS{idVendor}=="1556", ATTRS{idProduct}=="01b8", MODE="0666", GROUP="dialout"
