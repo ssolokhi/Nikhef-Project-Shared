@@ -1,0 +1,46 @@
+module alpideio(
+  input             clk_i     ,
+  input             rst_i     ,
+  input             reg_we_i  ,
+  input      [ 7:0] reg_addr_i,
+  input      [15:0] reg_data_i,
+  output reg [15:0] reg_data_o,
+
+  input  rst_oe_i       ,
+  input  rst_rst_i      , // TODO: naming
+  input  rst_forcezero_i,
+
+  input  alpide_clk_i,
+  input  ctrl_i      ,
+  input  ctrl_oe_i   ,
+  output mclk_o      ,
+  output mclk_oe_o   ,
+  output pordis_n_o  ,
+  output rst_n_o     ,
+  output dctrl_o     ,
+  output dctrl_oe_o
+
+  output alpide_clk_pad_o  ,
+  output alpide_clkoe_pad_o,
+  output alpide_dctrl_pad_o,
+  output alpide_dctrl_pad_o,
+
+  input  alpide_data_pad_i,
+  :
+
+);
+
+reg invert_dctrl;
+reg invert_dclk ;
+
+ctrl_i=ctrl_pad_i
+
+assign pordis_n_o=0;
+assign rst_n_o   =forcezero_i||!oe_i?1'b0:~rst_i;
+assign mclk_oe_o =oe_i;
+assign dctrl_oe_o=oe_i&dctrl_oe_i;
+assign mclk_o    =forcezero_i?1'b0:clk_i  ;
+assign dctrl_o   =forcezero_i?1'b0:dctrl_i;
+
+endmodule
+
