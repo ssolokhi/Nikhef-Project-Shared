@@ -168,6 +168,26 @@ sleep(1)
 print('Starting DAC scan...')
 
 of =open('%s/%s'%(args.path,fname),'w')
+
+try:
+    for idac in tqdm(range(len(DACS)),desc="Overall progress"):
+        if idac == "VCASN":
+            dacrange = range(55,60)
+        else:
+            dacrange = range(256)
+        for step in tqdm(dacrange,leave=False,desc="scan: %s"%(DACS[idac])):            
+            data=measure_dac_step(daq, idac, step,chipid=args.chipid,mode=args.via_on_chip_adc)
+            if args.via_on_chip_adc: 
+                of.write('%s\t%d\t%d\n'%(DACS[idac],step,data[0]))
+            else:
+                of.write('%s\t%d\t%d\n'%(DACS[idac],step,data)) 
+except KeyboardInterrupt:
+    print('Test interrupted!')
+
+of.close()
+#daq.power_off()
+
+"""
 try:
     for idac in tqdm(range(len(DACS)),desc="Overall progress"):
         for step in tqdm(range(256),leave=False,desc="scan: %s"%(DACS[idac])):            
@@ -181,3 +201,4 @@ except KeyboardInterrupt:
 
 of.close()
 #daq.power_off()
+"""
