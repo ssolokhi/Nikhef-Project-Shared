@@ -1,0 +1,34 @@
+
+*** LogCollector started at 2024-06-06 14:48:15.986 ***
+[0m[1m[2024-06-06 14:48:15.994] [0m[32;1m(INFO)[0m [Producer.ALPIDE_plane_0 ]Receive an INI section
+    <Configuration>
+      <Section title="">
+        <EUDAQ_LOG_ADDR>tcp://127.0.0.1:55000</EUDAQ_LOG_ADDR>
+        <Name>ITS3.ini</Name>
+      </Section>
+      <Section title="Producer.ALPIDE_plane_0">
+        <#plane>4</#plane>
+        <#serial></#serial>
+        <#triggermode>replica</#triggermode>
+        <plane>0</plane>
+        <serial>DAQ-0009002400530E19</serial>
+        <triggermode>primary</triggermode>
+      </Section>
+    </Configuration>
+
+[0m[1m[2024-06-06 14:48:15.995] [0m[32;1m(INFO)[0m [DataCollector.dc ]Receive an INI section
+    <Configuration>
+      <Section title="">
+        <EUDAQ_LOG_ADDR>tcp://127.0.0.1:55000</EUDAQ_LOG_ADDR>
+        <Name>ITS3.ini</Name>
+      </Section>
+      <Section title="DataCollector.dc">
+        <dataproducers>ALPIDE_plane_0</dataproducers>
+      </Section>
+    </Configuration>
+
+[0m[1m[2024-06-06 14:48:15.994] [0m[32;1m(INFO)[0m [Producer.ALPIDE_plane_0 ]Producer.ALPIDE_plane_0 is to be initialised...
+[0m[1m[2024-06-06 14:48:16.007] [0m[31;1m(ERROR)[0m [Producer.ALPIDE_plane_0 ]Exception in DoInitialise: No DAQ board with serial number "DAQ-0009002400530E19" found.
+[0m[1m[2024-06-06 14:48:15.995] [0m[32;1m(INFO)[0m [DataCollector.dc ]DataCollector.dc is to be initialised...
+[0m[1m[2024-06-06 14:48:15.995] [0m[32;1m(INFO)[0m [DataCollector.dc ]TCPServer:: Listening on port 40627
+[0m[1m[2024-06-06 14:48:16.197] [0m[32;1m(INFO)[0m [DataCollector.dc ]DataCollector.dc is initialised.

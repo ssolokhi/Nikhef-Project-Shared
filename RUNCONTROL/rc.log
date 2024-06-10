@@ -1,0 +1,318 @@
+[0m[1m[2024-06-05 17:47:28.807] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-05 17:47:29.005] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-05 17:47:29.005] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-05 17:47:29.925] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-05 17:47:29.925] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-05 17:47:29.926] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-05 17:47:29.926] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-05 17:47:31.023] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-05 17:47:31.156] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #233174727
+[0m[1m[2024-06-05 17:48:53.237] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #233174727
+[0m[1m[2024-06-05 17:48:54.813] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-05 17:48:54.942] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #233174728
+[0m[1m[2024-06-05 17:49:04.062] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #233174728
+[0m[1m[2024-06-05 17:49:05.391] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-05 17:49:05.391] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mlog is not Status::STATE_UNCONF OR Status::STATE_CONF OR Status::STATE_STOPPED, skipped
+[0m[1m[2024-06-05 17:49:05.522] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #233174729
+[0m[1m[2024-06-05 17:49:18.951] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #233174729
+[0m[1m[2024-06-05 17:49:20.279] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Terminate command
+[0m[1m[2024-06-06 14:48:10.866] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-06 14:48:10.965] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-06 14:48:11.068] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-06 14:48:15.984] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-06 14:48:15.985] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-06 14:48:15.985] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-06 14:48:15.993] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-06 14:48:16.039] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-06 14:48:16.039] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-06 14:48:16.039] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 348, in userlogic_runner_
+    self.wait_replicas(pyeudaq.Status.STATE_UNCONF)
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 330, in wait_replicas
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-06 15:26:59.731] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-06 15:26:59.929] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-06 15:26:59.929] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-06 15:27:00.856] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-06 15:27:00.856] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-06 15:27:00.856] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-06 15:27:00.857] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-06 15:27:01.004] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-06 15:27:01.004] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-06 15:27:01.005] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 348, in userlogic_runner_
+    self.wait_replicas(pyeudaq.Status.STATE_UNCONF)
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 330, in wait_replicas
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-07 11:32:45.073] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 11:32:45.271] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 11:32:45.271] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 11:32:46.198] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-07 11:32:46.198] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-07 11:32:46.199] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-07 11:32:46.199] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-07 11:32:46.338] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-07 11:32:46.338] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-07 11:32:46.338] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 348, in userlogic_runner_
+    self.wait_replicas(pyeudaq.Status.STATE_UNCONF)
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 330, in wait_replicas
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-07 11:34:47.829] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 11:34:48.027] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 11:34:48.027] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 11:34:48.949] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-07 11:34:48.950] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-07 11:34:48.950] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-07 11:34:48.950] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-07 11:34:49.249] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 11:34:49.387] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235113446
+[0m[1m[2024-06-07 11:36:32.901] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235113446
+[0m[1m[2024-06-07 11:36:34.556] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 11:36:34.689] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235113447
+[0m[1m[2024-06-07 11:36:43.425] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235113447
+[0m[1m[2024-06-07 11:36:44.757] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 11:36:44.758] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mlog is not Status::STATE_UNCONF OR Status::STATE_CONF OR Status::STATE_STOPPED, skipped
+[0m[1m[2024-06-07 11:36:44.892] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235113448
+[0m[1m[2024-06-07 11:36:44.893] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mlog is not Status::STATE_CONF, skipped
+[0m[1m[2024-06-07 11:36:50.261] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235113448
+[0m[1m[2024-06-07 11:36:50.262] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mlog is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-07 11:36:51.928] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 11:36:52.056] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235113449
+[0m[1m[2024-06-07 11:36:57.671] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235113449
+[0m[1m[2024-06-07 11:36:59.001] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Terminate command
+[0m[1m[2024-06-07 11:38:22.630] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 11:38:22.829] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 11:38:22.829] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 11:38:23.756] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-07 11:38:23.756] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-07 11:38:23.756] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-07 11:38:23.757] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-07 11:38:24.049] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 11:38:24.188] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235113821
+[0m[1m[2024-06-07 11:40:13.978] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235113821
+[0m[1m[2024-06-07 11:40:15.361] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Terminate command
+[0m[1m[2024-06-07 11:54:17.204] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 11:54:17.402] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 11:54:17.402] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 11:54:18.329] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-07 11:54:18.330] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-07 11:54:18.330] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-07 11:54:18.330] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-07 11:54:19.427] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 11:54:19.557] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235115416
+[0m[1m[2024-06-07 11:58:09.399] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235115416
+[0m[1m[2024-06-07 11:58:10.775] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Terminate command
+[0m[1m[2024-06-07 12:06:13.706] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:06:13.903] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:06:13.904] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:06:14.824] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-07 12:06:14.824] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-07 12:06:14.824] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-07 12:06:14.824] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-07 12:06:15.130] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 12:06:15.268] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235120612
+[0m[1m[2024-06-07 12:06:19.415] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235120612
+[0m[1m[2024-06-07 12:06:20.899] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 12:06:21.029] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235120613
+[0m[1m[2024-06-07 12:06:25.344] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235120613
+[0m[1m[2024-06-07 12:06:26.672] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 12:06:26.672] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mlog is not Status::STATE_UNCONF OR Status::STATE_CONF OR Status::STATE_STOPPED, skipped
+[0m[1m[2024-06-07 12:06:26.804] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235120614
+[0m[1m[2024-06-07 12:06:26.804] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mlog is not Status::STATE_CONF, skipped
+[0m[1m[2024-06-07 12:06:30.982] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235120614
+[0m[1m[2024-06-07 12:06:30.982] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mlog is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-07 12:06:32.340] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 12:06:32.479] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235120615
+[0m[1m[2024-06-07 12:06:36.699] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235120615
+[0m[1m[2024-06-07 12:06:38.023] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 12:06:38.023] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mlog is not Status::STATE_UNCONF OR Status::STATE_CONF OR Status::STATE_STOPPED, skipped
+[0m[1m[2024-06-07 12:06:38.152] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235120616
+[0m[1m[2024-06-07 12:06:38.152] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mlog is not Status::STATE_CONF, skipped
+[0m[1m[2024-06-07 12:06:41.872] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235120616
+[0m[1m[2024-06-07 12:06:41.872] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mlog is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-07 12:06:43.200] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 12:06:43.328] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235120617
+[0m[1m[2024-06-07 12:06:47.467] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235120617
+[0m[1m[2024-06-07 12:06:48.794] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 12:06:48.794] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mlog is not Status::STATE_UNCONF OR Status::STATE_CONF OR Status::STATE_STOPPED, skipped
+[0m[1m[2024-06-07 12:06:48.923] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235120618
+[0m[1m[2024-06-07 12:06:53.585] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235120618
+[0m[1m[2024-06-07 12:06:55.054] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 12:06:55.183] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235120619
+[0m[1m[2024-06-07 12:06:59.358] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235120619
+[0m[1m[2024-06-07 12:07:00.820] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 12:07:00.957] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235120620
+[0m[1m[2024-06-07 12:07:05.658] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235120620
+[0m[1m[2024-06-07 12:07:07.591] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Terminate command
+[0m[1m[2024-06-07 12:09:27.788] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:09:27.986] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:09:27.986] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:09:28.903] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-07 12:09:28.903] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-07 12:09:28.903] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-07 12:09:28.903] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-07 12:09:29.212] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 12:09:29.342] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235120926
+[0m[1m[2024-06-07 12:28:32.101] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:28:32.299] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:28:32.299] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:28:33.220] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-07 12:28:33.220] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-07 12:28:33.220] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-07 12:28:33.220] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-07 12:28:33.523] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 12:28:33.655] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235122831
+[0m[1m[2024-06-07 12:30:38.687] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235122831
+[0m[1m[2024-06-07 12:30:40.008] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Terminate command
+[0m[1m[2024-06-07 12:38:52.294] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:38:52.492] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:40:00.153] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:40:00.351] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:40:53.481] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:40:53.679] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:41:41.116] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:41:41.314] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:41:41.314] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:41:42.241] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-07 12:41:42.242] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-07 12:41:42.242] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-07 12:41:42.242] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-07 12:41:42.540] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 12:41:42.679] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235124140
+[0m[1m[2024-06-07 12:41:46.899] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-07 12:41:46.899] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-07 12:41:46.899] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-07 12:41:46.902] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235124140
+[0m[1m[2024-06-07 12:41:46.902] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-07 12:42:35.935] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:42:36.134] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:42:36.134] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-07 12:42:37.053] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-07 12:42:37.058] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-07 12:42:37.058] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-07 12:42:37.058] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-07 12:42:38.141] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-07 12:42:38.326] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #235124235
+[0m[1m[2024-06-07 12:43:32.404] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #235124235
+[0m[1m[2024-06-07 12:43:33.973] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Terminate command
+[0m[1m[2024-06-10 12:13:10.479] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:13:10.677] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:13:10.677] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:13:11.598] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-10 12:13:11.598] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-10 12:13:11.598] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-10 12:13:11.598] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-10 12:13:11.647] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-10 12:13:11.648] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-10 12:13:11.648] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 348, in userlogic_runner_
+    self.wait_replicas(pyeudaq.Status.STATE_UNCONF)
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 330, in wait_replicas
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-10 12:14:07.017] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:14:07.215] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:14:07.215] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:14:08.133] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-10 12:14:08.133] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-10 12:14:08.133] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-10 12:14:08.134] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-10 12:14:08.434] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-10 12:14:08.562] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #241121406
+[0m[1m[2024-06-10 12:14:33.812] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #241121406
+[0m[1m[2024-06-10 12:14:35.134] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Terminate command
+[0m[1m[2024-06-10 12:36:06.465] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:36:06.663] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:36:06.663] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:36:07.581] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-10 12:36:07.581] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-10 12:36:07.582] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-10 12:36:07.582] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-10 12:36:07.886] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-10 12:36:08.015] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #241123605
+[0m[1m[2024-06-10 12:36:11.278] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-10 12:36:11.279] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-10 12:36:11.279] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 360, in userlogic_runner_
+    self.wait_replicas(5)
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 330, in wait_replicas
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-10 12:37:21.489] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:37:21.688] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:37:21.688] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:37:22.609] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-10 12:37:22.609] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-10 12:37:22.609] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-10 12:37:22.609] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-10 12:37:23.712] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-10 12:37:23.844] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #241123720
+[0m[1m[2024-06-10 12:39:39.458] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:39:39.656] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:39:39.656] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:39:40.575] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-10 12:39:40.575] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-10 12:39:40.576] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-10 12:39:40.576] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-10 12:39:40.881] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-10 12:39:41.058] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #241123938
+[0m[1m[2024-06-10 12:40:28.259] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #241123938
+[0m[1m[2024-06-10 12:40:58.934] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:40:59.132] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:40:59.132] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 12:41:00.052] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-10 12:41:00.052] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-10 12:41:00.052] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-10 12:41:00.052] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-10 12:41:01.155] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-10 12:41:01.336] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #241124058
+[0m[1m[2024-06-10 12:42:36.894] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #241124058
+[0m[1m[2024-06-10 12:42:38.214] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Terminate command
+[0m[1m[2024-06-10 13:01:32.322] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 13:01:32.520] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 13:01:32.520] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 13:01:33.443] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-10 13:01:33.443] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-10 13:01:33.443] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-10 13:01:33.443] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-10 13:01:34.542] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-10 13:01:34.674] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #241130131
+[0m[1m[2024-06-10 13:03:23.743] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #241130131
+[0m[1m[2024-06-10 13:03:25.063] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Terminate command
