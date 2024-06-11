@@ -47,6 +47,7 @@ for vdac in DACs:
     if vdac[0] == 'VCASN':
         # Load only the specific range for VCASN
         data = np.loadtxt(itertools.islice(inputf, 256*(i-1)+55, 256*(i-1)+60), usecols=(1, 2))
+        data = data[(data[:, 0] >= 55) & (data[:, 0] <= 59)]
     else:
         data = np.loadtxt(itertools.islice(inputf, 256*(i-1), 256*i), usecols=(1, 2))
    
