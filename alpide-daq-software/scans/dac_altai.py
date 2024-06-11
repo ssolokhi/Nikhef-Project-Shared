@@ -171,7 +171,7 @@ of =open('%s/%s'%(args.path,fname),'w')
 
 try:
     for idac in tqdm(range(len(DACS)),desc="Overall progress"):
-        if idac == "VCASN":
+        if DACS[idac] == "VCASN":
             dacrange = range(55,60)
         else:
             dacrange = range(256)
