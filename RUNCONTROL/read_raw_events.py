@@ -27,6 +27,8 @@ def getPixelCounts(reader):
         ev = reader.GetNextEvent()
         i += 1
 
+    print("Mean:", hm.mean(), "Max:", hm.max(), "Min:", hm.min())
+
     return hm
 
 
@@ -50,11 +52,11 @@ no_blanket =  "tests/1min-loop-run241124058_240610124104(noblanket).raw"
 blanket =  "tests/1min-loop-run241130131_240610130137(blanket).raw"
 
 if False:
-    f = eu.FileReader("native", ten_min_source)
+    f = eu.FileReader("native", with_source)
     hm = getPixelCounts(f)
-    np.savez("10min_sr90_a2_d4-hitmap.npz", hm=hm)
+    np.savez("1min_sr90_a2_d4-hitmap.npz", hm=hm)
 else:
-    save_file = np.load("10min_sr90_a2_d4-hitmap.npz", allow_pickle=True)
+    save_file = np.load("1min_sr90_a2_d4-hitmap.npz", allow_pickle=True)
     hm = save_file['hm']
 #truncatedHist(hm, ax, label="no blanket", alpha=0.6)
 
@@ -80,8 +82,8 @@ else:
 #masked_array = np.ma.masked_where(hm == 0, hm)
 
 # Simpe imshow
-#plt.imshow(hm, cmap='jet', vmax=150)
-plt.imshow(np.log(hm+0.000001), cmap='jet', vmax=np.log(200), vmin=0)
+#plt.imshow(hm, cmap='jet', vmax=20)
+plt.imshow(np.log(hm+0.000001), cmap='jet', vmax=np.log(30), vmin=0)
 plt.colorbar()
 
 plt.show()
