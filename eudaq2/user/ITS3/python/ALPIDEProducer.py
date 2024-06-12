@@ -63,6 +63,7 @@ class ALPIDEProducer(pyeudaq.Producer):
         self.triggermode=None
         self.idev=0
         self.isev=0
+        self.starttime = 0 # ADDED
 
     @exception_handler
     def DoInitialise(self):
@@ -149,8 +150,11 @@ class ALPIDEProducer(pyeudaq.Producer):
 
         # NEW< TRY TO FORCE TRIGGER!
         # record for one minute
+        print("DoStartRun")
         self.starttime = time()
+        print("time()")
         self.daq.trgseq.start.issue()
+        print("trgseq.start.issue()")
         
     @exception_handler
     def DoStopRun(self):
@@ -187,8 +191,9 @@ class ALPIDEProducer(pyeudaq.Producer):
                     self.isev+=1
 
             # ADDED TO RUN FOR 1 minute
-            if time() - self.starttime < 60:
-                self.daq.trgseq.start.issue()
+            if self.starttime:
+                if (time() - self.starttime) < 600:
+                    self.daq.trgseq.start.issue()
 
         self.send_status_event(datetime.now())
         self.isev+=1
@@ -202,7 +207,7 @@ class ALPIDEProducer(pyeudaq.Producer):
             self.daq.trg.ctrl.write(0b1000) # primary mode, no maskig of external trigger or busy, no forced busy (anymore)
             # TODO: needs to go out:
             self.daq.trgseq.dt_set.write(8000) # 10 kHz
-            self.daq.trgseq.ntrg_set.write(19264)# ADDED MORE TRIGGGERS 300)
+            self.daq.trgseq.ntrg_set.write(300) # 16 bit value
         elif self.triggermode=='replica':
             self.daq.trg.ctrl.write(0b0000) # replica mode, no masking, no forced busy (anymore)
 
@@ -246,16 +251,29 @@ class ALPIDEProducer(pyeudaq.Producer):
         self.SendEvent(ev)
 
     def read_and_send_event(self):
+        print("before daq event_read")
         raw=self.daq.event_read()
+        print("after daq event_read")
         if raw:
+            print("before decode")
             # ADDED PRINT STATEMENT TO SEE HITS
             hits, iev, tev, j = decoder.decode_event(raw, 0)
             print(iev, tev, hits)
-                
+
+            print("read_and_send_event, before bytes")
             raw=bytes(raw)
             assert len(raw)>=20
+            print("are 4 start bytes 0xAA?")
+            print(list(raw[:4]))
             assert list(raw[:4])==[0xAA]*4
+            print("are 4 end bytes 0xBB?")
+            print(list(raw[:-4]))
             assert list(raw[-4:])==[0xBB]*4
+            print("assert 3")
+            # ADDED TO SEE WHICH BYTES DISAPPEAR
+            for j,b in enumerate(raw[4:16]):
+                if b == None:
+                    print("byte {} = {} which is None?" % (j,b))
             itrg=sum(b<<(j*8) for j,b in enumerate(raw[4: 8]))
             tev =sum(b<<(j*8) for j,b in enumerate(raw[8:16]))
             ev=pyeudaq.Event('RawEvent',self.name)

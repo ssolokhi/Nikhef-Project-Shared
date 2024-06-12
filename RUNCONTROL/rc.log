@@ -316,3 +316,486 @@ RuntimeError: One or more conections in ERROR state.
 [0m[1m[2024-06-10 13:01:34.674] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #241130131
 [0m[1m[2024-06-10 13:03:23.743] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #241130131
 [0m[1m[2024-06-10 13:03:25.063] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Terminate command
+[0m[1m[2024-06-10 14:04:30.995] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-10 14:04:31.193] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-11 10:21:05.683] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-11 10:21:05.881] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-11 11:51:13.769] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-11 11:51:13.967] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-11 12:00:11.587] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-11 12:00:11.785] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-11 12:01:37.828] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-11 12:01:38.026] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-11 12:01:38.026] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-11 12:01:38.954] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-11 12:01:38.954] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-11 12:01:38.955] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-11 12:01:38.955] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-11 12:01:40.050] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-11 12:01:40.188] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #242120136
+[0m[1m[2024-06-11 12:01:44.871] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-11 12:01:44.871] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-11 12:01:44.871] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-11 12:01:44.872] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #242120136
+[0m[1m[2024-06-11 12:01:44.872] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-11 12:05:51.925] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-11 12:05:52.123] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-11 12:05:52.123] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-11 12:05:53.052] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-11 12:05:53.052] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-11 12:05:53.052] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-11 12:05:53.052] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-11 12:05:53.336] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-11 12:05:53.464] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #242120551
+[0m[1m[2024-06-11 12:05:57.479] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-11 12:05:57.479] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-11 12:05:57.480] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-11 12:05:57.482] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #242120551
+[0m[1m[2024-06-11 12:05:57.483] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-11 12:07:21.658] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-11 12:07:21.856] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-11 12:07:21.856] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-11 12:07:22.783] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-11 12:07:22.784] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-11 12:07:22.784] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-11 12:07:22.784] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-11 12:07:23.872] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-11 12:07:24.041] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #242120720
+[0m[1m[2024-06-11 12:15:05.428] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #242120720
+[0m[1m[2024-06-11 12:15:06.753] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Terminate command
+[0m[1m[2024-06-12 16:00:50.524] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:00:50.622] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:00:50.725] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:00:51.648] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:00:51.649] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:00:51.649] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:00:51.649] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:00:52.767] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:00:52.897] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243160049
+[0m[1m[2024-06-12 16:00:56.705] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-12 16:00:56.705] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-12 16:00:56.706] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-12 16:00:56.707] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243160049
+[0m[1m[2024-06-12 16:00:56.707] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-12 16:06:31.273] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:06:31.471] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:06:31.471] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:06:32.392] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:06:32.393] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:06:32.393] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:06:32.393] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:06:32.769] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:06:32.905] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243160630
+[0m[1m[2024-06-12 16:06:37.500] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-12 16:06:37.500] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-12 16:06:37.501] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-12 16:06:37.504] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243160630
+[0m[1m[2024-06-12 16:06:37.504] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-12 16:11:04.137] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:11:04.335] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:11:04.336] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:11:05.263] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:11:05.263] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:11:05.264] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:11:05.264] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:11:06.345] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:11:06.483] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243161103
+[0m[1m[2024-06-12 16:11:10.297] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-12 16:11:10.297] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-12 16:11:10.298] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-12 16:11:10.299] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243161103
+[0m[1m[2024-06-12 16:11:10.299] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-12 16:12:39.128] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:12:39.326] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:14:25.127] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:14:25.326] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:15:00.676] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:15:00.875] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:15:00.875] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:15:01.801] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:15:01.801] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:15:01.801] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:15:01.801] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:15:02.881] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:15:03.017] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243161459
+[0m[1m[2024-06-12 16:15:07.646] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-12 16:15:07.646] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-12 16:15:07.646] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-12 16:15:07.648] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243161459
+[0m[1m[2024-06-12 16:15:07.648] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-12 16:16:11.317] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:16:11.517] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:16:11.620] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:16:12.538] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:16:12.538] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:16:12.538] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:16:12.538] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:16:13.657] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:16:13.794] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243161610
+[0m[1m[2024-06-12 16:16:17.879] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-12 16:16:17.879] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-12 16:16:17.879] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-12 16:16:17.881] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243161610
+[0m[1m[2024-06-12 16:16:17.881] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-12 16:19:03.793] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:19:03.992] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:19:03.992] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:19:04.919] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:19:04.919] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:19:04.919] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:19:04.919] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:19:05.199] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:19:05.333] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243161902
+[0m[1m[2024-06-12 16:19:08.936] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-12 16:19:08.936] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-12 16:19:08.937] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-12 16:19:08.939] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243161902
+[0m[1m[2024-06-12 16:19:08.939] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-12 16:20:59.980] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:21:00.178] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:21:00.178] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:21:01.106] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:21:01.106] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:21:01.106] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:21:01.106] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:21:01.390] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:21:01.531] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243162059
+[0m[1m[2024-06-12 16:21:05.942] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-12 16:21:05.942] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-12 16:21:05.942] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-12 16:21:05.944] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243162059
+[0m[1m[2024-06-12 16:21:05.944] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-12 16:23:51.109] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:23:51.307] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:23:51.308] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:23:52.226] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:23:52.226] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:23:52.227] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:23:52.227] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:23:53.309] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:23:53.448] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243162350
+[0m[1m[2024-06-12 16:24:34.730] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243162350
+[0m[1m[2024-06-12 16:24:36.052] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Terminate command
+[0m[1m[2024-06-12 16:25:22.848] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:25:23.046] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:25:23.047] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:25:23.967] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:25:23.968] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:25:23.968] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:25:23.968] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:25:25.065] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:25:25.194] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243162521
+[0m[1m[2024-06-12 16:25:29.329] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-12 16:25:29.329] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-12 16:25:29.330] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-12 16:25:29.331] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243162521
+[0m[1m[2024-06-12 16:25:29.331] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-12 16:26:51.302] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:26:51.501] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:26:51.501] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:26:52.427] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:26:52.427] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:26:52.427] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:26:52.427] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:26:53.505] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:26:53.645] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243162650
+[0m[1m[2024-06-12 16:26:57.460] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-12 16:26:57.461] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-12 16:26:57.461] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-12 16:26:57.464] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243162650
+[0m[1m[2024-06-12 16:26:57.465] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-12 16:27:31.937] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:27:32.136] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:27:32.136] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:27:33.064] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:27:33.064] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:27:33.064] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:27:33.064] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:27:34.148] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:27:34.287] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243162731
+[0m[1m[2024-06-12 16:27:38.349] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-12 16:27:38.350] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-12 16:27:38.350] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-12 16:27:38.351] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243162731
+[0m[1m[2024-06-12 16:27:38.352] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-12 16:28:27.235] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:28:27.433] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:28:27.433] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:28:28.355] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:28:28.355] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:28:28.355] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:28:28.355] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:28:29.449] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:28:29.589] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243162826
+[0m[1m[2024-06-12 16:28:33.406] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-12 16:28:33.406] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-12 16:28:33.406] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-12 16:28:33.409] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243162826
+[0m[1m[2024-06-12 16:28:33.409] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-12 16:29:35.302] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:29:35.501] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:29:35.501] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:29:36.428] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:29:36.428] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:29:36.429] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:29:36.429] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:29:36.710] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:29:36.849] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243162934
+[0m[1m[2024-06-12 16:29:41.412] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-12 16:29:41.412] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-12 16:29:41.413] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-12 16:29:41.414] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243162934
+[0m[1m[2024-06-12 16:29:41.414] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-12 16:31:24.945] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:31:25.143] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:31:25.143] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:31:26.062] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:31:26.062] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:31:26.063] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:31:26.063] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:31:26.354] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:31:26.501] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243163124
+[0m[1m[2024-06-12 16:32:16.914] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:32:17.112] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:32:17.112] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:32:18.033] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:32:18.033] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:32:18.033] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:32:18.033] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:32:19.127] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:32:19.258] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243163216
+[0m[1m[2024-06-12 16:32:23.079] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-12 16:32:23.079] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-12 16:32:23.079] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-12 16:32:23.082] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243163216
+[0m[1m[2024-06-12 16:32:23.082] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-12 16:33:28.432] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:33:28.630] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:33:28.630] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:33:29.550] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:33:29.551] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:33:29.551] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:33:29.551] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:33:29.839] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:33:29.979] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243163327
+[0m[1m[2024-06-12 16:33:34.579] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-12 16:33:34.579] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-12 16:33:34.579] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-12 16:33:34.581] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243163327
+[0m[1m[2024-06-12 16:33:34.581] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-12 16:36:13.766] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:36:13.964] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:36:13.964] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:36:14.885] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:36:14.886] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:36:14.886] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:36:14.886] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:36:15.174] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:36:15.317] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243163612
+[0m[1m[2024-06-12 16:36:18.917] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-12 16:36:18.917] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-12 16:36:18.918] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-12 16:36:18.922] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243163612
+[0m[1m[2024-06-12 16:36:18.922] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-12 16:37:12.244] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:37:12.442] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:37:12.442] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:37:13.369] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:37:13.370] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:37:13.370] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:37:13.370] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:37:14.461] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:37:14.609] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243163711
+[0m[1m[2024-06-12 16:37:18.756] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-12 16:37:18.756] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-12 16:37:18.756] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-12 16:37:18.758] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243163711
+[0m[1m[2024-06-12 16:37:18.758] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-12 16:41:30.407] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:41:30.605] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:41:30.605] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 16:41:31.526] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 16:41:31.526] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 16:41:31.526] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 16:41:31.526] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 16:41:31.812] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 16:41:31.953] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243164129
+[0m[1m[2024-06-12 16:41:36.095] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 in ERROR state
+[0m[1m[2024-06-12 16:41:36.095] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mOne or more conections in ERROR state.
+[0m[1m[2024-06-12 16:41:36.096] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mTraceback (most recent call last):
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 334, in userlogic_wrapper
+    self.userlogic_runner_()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 377, in userlogic_runner_
+    self.check_status()
+  File "/home/alpaca/eudaq2/user/ITS3/python/ITS3RunControl.py", line 308, in check_status
+    raise RuntimeError("One or more conections in ERROR state.")
+RuntimeError: One or more conections in ERROR state.
+
+[0m[1m[2024-06-12 16:41:36.099] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243164129
+[0m[1m[2024-06-12 16:41:36.099] [0m[31;1m(ERROR)[0m[31;1m [unknown sender][0mALPIDE_plane_0 is not Status::STATE_RUNNING, skipped
+[0m[1m[2024-06-12 17:06:03.888] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 17:06:04.086] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 17:06:04.086] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 17:06:05.007] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 17:06:05.007] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 17:06:05.008] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 17:06:05.008] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 17:06:05.401] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 17:06:05.531] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243170602
+[0m[1m[2024-06-12 17:07:19.268] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243170602
+[0m[1m[2024-06-12 17:07:20.675] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Terminate command
+[0m[1m[2024-06-12 17:18:37.689] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 17:18:37.887] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 17:18:37.887] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mConnect:    
+[0m[1m[2024-06-12 17:18:38.815] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command
+[0m[1m[2024-06-12 17:18:38.815] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for log
+[0m[1m[2024-06-12 17:18:38.815] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for ALPIDE_plane_0
+[0m[1m[2024-06-12 17:18:38.816] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Initialise command for dc
+[0m[1m[2024-06-12 17:18:39.902] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Configure command
+[0m[1m[2024-06-12 17:18:40.034] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StartRun command for RUN #243171836
+[0m[1m[2024-06-12 17:31:15.818] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing StopRun command for RUN #243171836
+[0m[1m[2024-06-12 17:31:17.356] [0m[32;1m(INFO)[0m[31;1m [unknown sender][0mProcessing Terminate command

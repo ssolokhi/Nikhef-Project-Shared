@@ -41,17 +41,28 @@ def truncatedHist(hm, ax, truncate=100, **kwargs):
     return ax.hist(hits[hits < truncate], bins = 100, **kwargs)
 
 
-fig, ax = plt.subplots()
+#fig, ax = plt.subplots()
 
-f = eu.FileReader("native", "tests/1min-loop-run241124058_240610124104(noblanket).raw")
-hm = getPixelCounts(f)
-truncatedHist(hm, ax, label="no blanket", alpha=0.6)
+# RAW file paths
+ten_min_source = "tests/10min-loop-run243171836_240612171843.raw"
+with_source =  "tests/1min-loop-run243170602_240612170608.raw"
+no_blanket =  "tests/1min-loop-run241124058_240610124104(noblanket).raw"
+blanket =  "tests/1min-loop-run241130131_240610130137(blanket).raw"
 
-f_blanket = eu.FileReader("native", "tests/1min-loop-run241130131_240610130137(blanket).raw")
-hm_blanket = getPixelCounts(f_blanket)
-truncatedHist(hm_blanket, ax, label='blanket', alpha=0.6)
-plt.legend()
-plt.show()
+if False:
+    f = eu.FileReader("native", ten_min_source)
+    hm = getPixelCounts(f)
+    np.savez("10min_sr90_a2_d4-hitmap.npz", hm=hm)
+else:
+    save_file = np.load("10min_sr90_a2_d4-hitmap.npz", allow_pickle=True)
+    hm = save_file['hm']
+#truncatedHist(hm, ax, label="no blanket", alpha=0.6)
+
+#f_blanket = eu.FileReader("native", blanket)
+#hm_blanket = getPixelCounts(f_blanket)
+#truncatedHist(hm_blanket, ax, label='blanket', alpha=0.6)
+#plt.legend()
+#plt.show()
 
 # Scatter plot of non zero
 #nonzero_xy = np.nonzero(hm)
@@ -62,9 +73,6 @@ plt.show()
 #plt.scatter(nonzero_xy[0], nonzero_xy[1], s=counts_xy, alpha=0.6)
 #plt.show()
 
-# Log scale hitmap
-#plt.imshow(np.log(hm+0.1))
-
 # Show non zero
 #plt.imshow((hm > 0) + (hm > 1), cmap='jet', vmin=0, vmax=2)
 
@@ -72,7 +80,8 @@ plt.show()
 #masked_array = np.ma.masked_where(hm == 0, hm)
 
 # Simpe imshow
-#plt.imshow(hm, cmap='jet', vmax=300)
-#plt.colorbar()
-#
-#plt.show()
+#plt.imshow(hm, cmap='jet', vmax=150)
+plt.imshow(np.log(hm+0.000001), cmap='jet', vmax=np.log(200), vmin=0)
+plt.colorbar()
+
+plt.show()
