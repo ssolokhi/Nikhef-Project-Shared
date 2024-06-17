@@ -63,7 +63,9 @@ class ALPIDEProducer(pyeudaq.Producer):
         self.triggermode=None
         self.idev=0
         self.isev=0
-        self.starttime = 0 # ADDED
+# ADDED
+        self.starttime = 0 
+        self.selftrigger=False
 
     @exception_handler
     def DoInitialise(self):
@@ -151,10 +153,11 @@ class ALPIDEProducer(pyeudaq.Producer):
         # NEW< TRY TO FORCE TRIGGER!
         # record for one minute
         print("DoStartRun")
-        self.starttime = time()
-        print("time()")
-        self.daq.trgseq.start.issue()
-        print("trgseq.start.issue()")
+        if self.selftrigger:
+            self.starttime = time()
+            print("time()")
+            self.daq.trgseq.start.issue()
+            print("trgseq.start.issue()")
         
     @exception_handler
     def DoStopRun(self):
@@ -191,7 +194,7 @@ class ALPIDEProducer(pyeudaq.Producer):
                     self.isev+=1
 
             # ADDED TO RUN FOR 1 minute
-            if self.starttime:
+            if self.selftrigger and self.starttime:
                 if (time() - self.starttime) < 600:
                     self.daq.trgseq.start.issue()
 
@@ -257,8 +260,8 @@ class ALPIDEProducer(pyeudaq.Producer):
         if raw:
             print("before decode")
             # ADDED PRINT STATEMENT TO SEE HITS
-            hits, iev, tev, j = decoder.decode_event(raw, 0)
-            print(iev, tev, hits)
+            #hits, iev, tev, j = decoder.decode_event(raw, 0)
+            #print(iev, tev, hits)
 
             print("read_and_send_event, before bytes")
             raw=bytes(raw)
@@ -267,7 +270,7 @@ class ALPIDEProducer(pyeudaq.Producer):
             print(list(raw[:4]))
             assert list(raw[:4])==[0xAA]*4
             print("are 4 end bytes 0xBB?")
-            print(list(raw[:-4]))
+            print(list(raw[-4:]))
             assert list(raw[-4:])==[0xBB]*4
             print("assert 3")
             # ADDED TO SEE WHICH BYTES DISAPPEAR
