@@ -158,24 +158,25 @@ for iev, track in enumerate(event_tracks):
         plane_times[plane].append(t)
         plane_hits[plane].extend(hits)
     
-    # Plot times
-    for plane, p_times in plane_times.items():
-        ax[0].scatter(plane, p_times, label=plane)
-        print(plane,"times", p_times)
-
-    # Plot hit points
     total_hits = 0
+    planes_sorted = sorted(plane_hm.keys())
     colors = ['red', 'magenta', 'purple', 'blue']
-    for (plane, hits), c in zip(plane_hits.items(), colors):
+    for plane, c in zip(planes_sorted, colors):
+        # Plot times
+        ax[0].scatter(plane, plane_times[plane], color=c, label=plane)
+        print(plane,"times", plane_times[plane])
+
+        # Plot hit points
+        hits = plane_hits[plane]
         total_hits += len(hits)
         ax[1].scatter([x[0] for x in hits], [x[1] for x in hits], label=plane, color=c, s=1)
 
         total_time_range = max([max(p_times) for p_times in plane_times.values()])\
                            - min([min(p_times) for p_times in plane_times.values()])
 
-    total_secs = total_time_range / 7.8E7
+        total_secs = total_time_range / 7.8E7
      
-    fig.suptitle(f"Event number {iev}\n {total_hits} hits, Timespan {total_time_range} ~ {total_secs}s")
+        fig.suptitle(f"Event number {iev}\n {total_hits} hits, Timespan {total_time_range} ~ {total_secs}s")
     ax[0].legend()
     ax[1].legend()
     ax[1].set_xlim(0,1024)
