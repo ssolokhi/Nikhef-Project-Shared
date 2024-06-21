@@ -29,7 +29,8 @@ if args.prog_all:
 #'''
 
 device_list = subprocess.run(['alpide-daq-program', '--list'], capture_output=True, text=True)
-print(device_list)
+print(device_list.stdout)
+print(device_list.stderr)
 
 daq_boards = []
 for i, line in enumerate(device_list.stdout.split('\n')):
