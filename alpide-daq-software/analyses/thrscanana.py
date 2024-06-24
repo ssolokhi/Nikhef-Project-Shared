@@ -47,8 +47,18 @@ def thrscanana(args):
         rowhits=np.zeros((dvmax-dvmin+1,1024))
         for dv in range(dvmin,dvmax+1):
             for itrg in range(params['ntrg']):
-                hits,iev,tev,j=decoder.decode_event(data,i)
-                pbar.update(j-i)
+                try:
+                    hits, iev, tev, j = decoder.decode_event(data, i)
+                except ValueError as e:
+                    print(f"Error decoding event at index {i}: {e}")
+                    print(f"Data segment causing error: {data[i:i+16]}")
+                    i += 16  # Skip over the problematic segment
+                    continue
+                except Exception as e:
+                    print(f"Unexpected error decoding event at index {i}: {e}")
+                    return
+                pbar.update(j - i)
+                i = j
                 i=j
                 for x,y in hits:
                     if y!=row:
