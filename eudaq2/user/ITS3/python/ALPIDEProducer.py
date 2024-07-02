@@ -2,6 +2,8 @@
 
 import pyeudaq
 import alpidedaqboard
+from alpidedaqboard import decoder # ADDED DECODER
+from time import time
 from datetime import datetime
 from time import sleep
 import subprocess
@@ -61,6 +63,9 @@ class ALPIDEProducer(pyeudaq.Producer):
         self.triggermode=None
         self.idev=0
         self.isev=0
+# ADDED
+        self.starttime = 0 
+        self.selftrigger=False
 
     @exception_handler
     def DoInitialise(self):
@@ -144,6 +149,15 @@ class ALPIDEProducer(pyeudaq.Producer):
         self.isev+=1
         self.armtrigger()
         self.is_running=True
+
+        # NEW< TRY TO FORCE TRIGGER!
+        # record for one minute
+        print("DoStartRun")
+        if self.selftrigger:
+            self.starttime = time()
+            print("time()")
+            self.daq.trgseq.start.issue()
+            print("trgseq.start.issue()")
         
     @exception_handler
     def DoStopRun(self):
@@ -178,6 +192,12 @@ class ALPIDEProducer(pyeudaq.Producer):
                     ilast=self.idev
                     self.send_status_event(tlast)
                     self.isev+=1
+
+            # ADDED TO RUN FOR 1 minute
+            if self.selftrigger and self.starttime:
+                if (time() - self.starttime) < 600:
+                    self.daq.trgseq.start.issue()
+
         self.send_status_event(datetime.now())
         self.isev+=1
         while self.read_and_send_event(): # try to get anything remaining
@@ -190,7 +210,7 @@ class ALPIDEProducer(pyeudaq.Producer):
             self.daq.trg.ctrl.write(0b1000) # primary mode, no maskig of external trigger or busy, no forced busy (anymore)
             # TODO: needs to go out:
             self.daq.trgseq.dt_set.write(8000) # 10 kHz
-            self.daq.trgseq.ntrg_set.write(300)
+            self.daq.trgseq.ntrg_set.write(300) # 16 bit value
         elif self.triggermode=='replica':
             self.daq.trg.ctrl.write(0b0000) # replica mode, no masking, no forced busy (anymore)
 
@@ -213,16 +233,16 @@ class ALPIDEProducer(pyeudaq.Producer):
         ev.SetTag('Time',time.isoformat())
         if bore:
             ev.SetBORE()
-            ev.SetTag('FPGA_GIT'    ,self.daq.get_fpga_git())
-            ev.SetTag('FPGA_COMPILE',self.daq.get_fpga_tcompile().isoformat())
-            #ev.SetTag('FX3_GIT'     ,self.daq.get_fx3_git())
-            #ev.SetTag('FX3_COMPILE' ,self.daq.get_fx3_tcompile().isoformat())
-            git =subprocess.check_output(['git','rev-parse','HEAD']).strip()
-            diff=subprocess.check_output(['git','diff'])
-            ev.SetTag('EUDAQ_GIT'   ,git )
-            ev.SetTag('EUDAQ_DIFF'  ,diff)
-            ev.SetTag('ALPIDEDAQ_GIT' ,self.daq.get_software_git())
-            ev.SetTag('ALPIDEDAQ_DIFF',self.daq.get_software_diff())
+            #ev.SetTag('FPGA_GIT'    ,self.daq.get_fpga_git())
+            #ev.SetTag('FPGA_COMPILE',self.daq.get_fpga_tcompile().isoformat())
+            #ev.SetTag('FX3_GIT'     ,self.daq.get_fx3_git()) #was commented out
+            #ev.SetTag('FX3_COMPILE' ,self.daq.get_fx3_tcompile().isoformat()) #was commented out
+            #git =subprocess.check_output(['git','rev-parse','HEAD']).strip()
+            #diff=subprocess.chehits, iev, tev, j = decoder.decode_event(ev, 0)
+            #ev.SetTag('EUDAQ_GIT'   ,git )
+            #ev.SetTag('EUDAQ_DIFF'  ,diff)
+            #ev.SetTag('ALPIDEDAQ_GIT' ,self.daq.get_software_git())
+            #ev.SetTag('ALPIDEDAQ_DIFF',self.daq.get_software_diff())
         if eore:
             ev.SetEORE()
         if bore or eore:
@@ -234,12 +254,29 @@ class ALPIDEProducer(pyeudaq.Producer):
         self.SendEvent(ev)
 
     def read_and_send_event(self):
+        print("before daq event_read")
         raw=self.daq.event_read()
+        print("after daq event_read")
         if raw:
+            print("before decode")
+            # ADDED PRINT STATEMENT TO SEE HITS
+            #hits, iev, tev, j = decoder.decode_event(raw, 0)
+            #print(iev, tev, hits)
+
+            print("read_and_send_event, before bytes")
             raw=bytes(raw)
             assert len(raw)>=20
+            print("are 4 start bytes 0xAA?")
+            print(list(raw[:4]))
             assert list(raw[:4])==[0xAA]*4
+            print("are 4 end bytes 0xBB?")
+            print(list(raw[-4:]))
             assert list(raw[-4:])==[0xBB]*4
+            print("assert 3")
+            # ADDED TO SEE WHICH BYTES DISAPPEAR
+            for j,b in enumerate(raw[4:16]):
+                if b == None:
+                    print("byte {} = {} which is None?" % (j,b))
             itrg=sum(b<<(j*8) for j,b in enumerate(raw[4: 8]))
             tev =sum(b<<(j*8) for j,b in enumerate(raw[8:16]))
             ev=pyeudaq.Event('RawEvent',self.name)

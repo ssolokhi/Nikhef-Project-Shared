@@ -1,0 +1,108 @@
+
+*** LogCollector started at 2024-06-10 13:01:33.464 ***
+[0m[1m[2024-06-10 13:01:33.468] [0m[32;1m(INFO)[0m [DataCollector.dc ]Receive an INI section
+    <Configuration>
+      <Section title="">
+        <EUDAQ_LOG_ADDR>tcp://127.0.0.1:55000</EUDAQ_LOG_ADDR>
+        <Name>ITS3.ini</Name>
+      </Section>
+      <Section title="DataCollector.dc">
+        <dataproducers>ALPIDE_plane_0</dataproducers>
+      </Section>
+    </Configuration>
+
+[0m[1m[2024-06-10 13:01:33.468] [0m[32;1m(INFO)[0m [Producer.ALPIDE_plane_0 ]Receive an INI section
+    <Configuration>
+      <Section title="">
+        <EUDAQ_LOG_ADDR>tcp://127.0.0.1:55000</EUDAQ_LOG_ADDR>
+        <Name>ITS3.ini</Name>
+      </Section>
+      <Section title="Producer.ALPIDE_plane_0">
+        <#plane>4</#plane>
+        <#serial></#serial>
+        <#triggermode>replica</#triggermode>
+        <plane>0</plane>
+        <serial>DAQ-000900240054142B</serial>
+        <triggermode>primary</triggermode>
+      </Section>
+    </Configuration>
+
+[0m[1m[2024-06-10 13:01:33.468] [0m[32;1m(INFO)[0m [Producer.ALPIDE_plane_0 ]Producer.ALPIDE_plane_0 is to be initialised...
+[0m[1m[2024-06-10 13:01:33.468] [0m[32;1m(INFO)[0m [DataCollector.dc ]DataCollector.dc is to be initialised...
+[0m[1m[2024-06-10 13:01:33.469] [0m[32;1m(INFO)[0m [DataCollector.dc ]TCPServer:: Listening on port 35517
+[0m[1m[2024-06-10 13:01:33.689] [0m[32;1m(INFO)[0m [Producer.ALPIDE_plane_0 ]Producer.ALPIDE_plane_0 is initialised.
+[0m[1m[2024-06-10 13:01:34.471] [0m[32;1m(INFO)[0m [DataCollector.dc ]DataCollector.dc is initialised.
+[0m[1m[2024-06-10 13:01:34.543] [0m[32;1m(INFO)[0m [DataCollector.dc ]Receive a CONF section
+    <Configuration>
+      <Section title="">
+        <DataCollector.dc>tcp://127.0.0.1:35517</DataCollector.dc>
+        <LogCollector.log>tcp://127.0.0.1:55000</LogCollector.log>
+        <Name>/home/alpaca/RUNCONTROL/ITS3-align.conf</Name>
+      </Section>
+      <Section title="DataCollector.dc">
+        <EUDAQ_FW>native</EUDAQ_FW>
+        <EUDAQ_FW_PATTERN>/home/alpaca/RUNCONTROL/tests/1min-loop-run$6R_$12D$X</EUDAQ_FW_PATTERN>
+      </Section>
+    </Configuration>
+
+[0m[1m[2024-06-10 13:01:34.543] [0m[32;1m(INFO)[0m [Producer.ALPIDE_plane_0 ]Receive a CONF section
+    <Configuration>
+      <Section title="">
+        <DataCollector.dc>tcp://127.0.0.1:35517</DataCollector.dc>
+        <LogCollector.log>tcp://127.0.0.1:55000</LogCollector.log>
+        <Name>/home/alpaca/RUNCONTROL/ITS3-align.conf</Name>
+      </Section>
+      <Section title="Producer.ALPIDE_plane_0">
+        <#EUDAQ_DC>dc</#EUDAQ_DC>
+        <#EUDAQ_ID>4</#EUDAQ_ID>
+        <#IDB>29</#IDB>
+        <#ITHR>60</#ITHR>
+        <#STROBE_LENGTH>400</#STROBE_LENGTH>
+        <#VCASN>105</#VCASN>
+        <#VCASN2>117</#VCASN2>
+        <#VCLIP>60</#VCLIP>
+        <EUDAQ_DC>dc</EUDAQ_DC>
+        <EUDAQ_ID>0</EUDAQ_ID>
+        <IDB>29</IDB>
+        <ITHR>60</ITHR>
+        <STROBE_LENGTH>3600</STROBE_LENGTH>
+        <VCASN>55</VCASN>
+        <VCASN2>59</VCASN2>
+        <VCLIP>60</VCLIP>
+      </Section>
+    </Configuration>
+
+[0m[1m[2024-06-10 13:01:34.543] [0m[32;1m(INFO)[0m [DataCollector.dc ]DataCollector.dc is to be configured...
+[0m[1m[2024-06-10 13:01:34.543] [0m[32;1m(INFO)[0m [DataCollector.dc ]DataCollector.dc is configured.
+[0m[1m[2024-06-10 13:01:34.543] [0m[32;1m(INFO)[0m [Producer.ALPIDE_plane_0 ]Producer.ALPIDE_plane_0 is to be configured...
+[0m[1m[2024-06-10 13:01:34.651] [0m[32;1m(INFO)[0m [Producer.ALPIDE_plane_0 ]Producer.ALPIDE_plane_0 is configured.
+[0m[1m[2024-06-10 13:01:35.776] [0m[32;1m(INFO)[0m [DataCollector.dc ]RUN #241130131 is to be started...
+[0m[1m[2024-06-10 13:01:35.777] [0m[32;1m(INFO)[0m [DataCollector.dc ]RUN #241130131 is started.
+[0m[1m[2024-06-10 13:01:37.877] [0m[32;1m(INFO)[0m [Producer.ALPIDE_plane_0 ]RUN #241130131 is to be started...
+[0m[1m[2024-06-10 13:01:37.883] [0m[32;1m(INFO)[0m [DataCollector.dc ]DataReceiver: Connection from <ConnectionTCP>
+  <FD>tcp://127.0.0.1:38852</FD>
+  <Connection>
+    <Type>Producer</Type>
+    <Name>ALPIDE_plane_0</Name>
+    <State>1</State>
+  </Connection>
+</ConnectionTCP>
+
+[0m[1m[2024-06-10 13:01:37.934] [0m[32;1m(INFO)[0m [Producer.ALPIDE_plane_0 ]RUN #241130131 is started.
+[0m[1m[2024-06-10 13:03:23.744] [0m[32;1m(INFO)[0m [Producer.ALPIDE_plane_0 ]RUN #241130131 is to be stopped...
+[0m[1m[2024-06-10 13:03:23.956] [0m[32;1m(INFO)[0m [Producer.ALPIDE_plane_0 ]RUN #241130131 is stopped.
+[0m[1m[2024-06-10 13:03:24.044] [0m[32;1m(INFO)[0m [DataCollector.dc ]RUN #241130131 is to be stopped...
+[0m[1m[2024-06-10 13:03:24.057] [0m[32;1m(INFO)[0m [DataCollector.dc ]DataReceiver: Disconnected from <ConnectionTCP>
+  <FD>tcp://127.0.0.1:38852</FD>
+  <Connection>
+    <Type>Producer</Type>
+    <Name>ALPIDE_plane_0</Name>
+    <State>0</State>
+  </Connection>
+</ConnectionTCP>
+
+[0m[1m[2024-06-10 13:03:24.301] [0m[32;1m(INFO)[0m [DataCollector.dc ]RUN #241130131 is stopped.
+[0m[1m[2024-06-10 13:03:25.064] [0m[32;1m(INFO)[0m [DataCollector.dc ]DataCollector.dc is to be terminated...
+[0m[1m[2024-06-10 13:03:25.064] [0m[32;1m(INFO)[0m [DataCollector.dc ]DataCollector.dc is terminated.
+[0m[1m[2024-06-10 13:03:25.064] [0m[32;1m(INFO)[0m [Producer.ALPIDE_plane_0 ]Producer.ALPIDE_plane_0 is to be terminated...
+[0m[1m[2024-06-10 13:03:25.064] [0m[32;1m(INFO)[0m [Producer.ALPIDE_plane_0 ]Producer.ALPIDE_plane_0 is terminated.
