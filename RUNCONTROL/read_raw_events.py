@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib
 import matplotlib.pyplot as plt
 from collections import Counter
 from copy import deepcopy
@@ -106,7 +107,19 @@ def truncatedHist(hm, ax, truncate=100, **kwargs):
 
 
 
+# Dimensions
+z1 = 7.5
+z2 = 12.5
+w = 3
+h = 1.5
+tolerance = 0.05
+pos_err = ((z1 + z2) / (z2 - z1))**2 * (tolerance)**2 # Assuming only x,y inaccuracies, no z
+pitch = 3 / 1024
 
+# Dimensions in pixel, units
+z1 = z1 / pitch
+z2 = z2 / pitch
+pos_err = pos_err / pitch
 
 
 # RAW file paths
@@ -125,6 +138,8 @@ radiation_4chip = "tests/4chip-radiation-run253141637_240619141642.raw"
 first_overnight = "tests/4chip-2pmt-First-overnight-muon-run253161546_240619161552.raw"
 second_overnight = "tests/4chip-2pmt-0deg-overnight-muon-run254155254_240620155259.raw"
 
+all_muons = "tests/all_muons.raw"
+
 
 # Read and process EUDAQ raw file
 CURRENT_RAW = first_overnight
@@ -139,7 +154,8 @@ for iev, track in enumerate(event_tracks):
         print("Event number", iev, "no hits")
         continue
 
-    fig, ax = plt.subplots(1,2, figsize=(16,8))
+    #fig, ax = plt.subplots(1,2, figsize=(16,8))
+    fig, ax = plt.subplots(figsize=(16,8))
     fig.suptitle(f"Event number {iev}\n {len(track)} hits")
 
     # Save times of each event
@@ -163,25 +179,51 @@ for iev, track in enumerate(event_tracks):
     colors = ['red', 'magenta', 'purple', 'blue']
     for plane, c in zip(planes_sorted, colors):
         # Plot times
-        ax[0].scatter(plane, plane_times[plane], color=c, label=plane)
+        #ax[0].scatter(plane, plane_times[plane], color=c, label=plane)
         print(plane,"times", plane_times[plane])
 
         # Plot hit points
         hits = plane_hits[plane]
         total_hits += len(hits)
-        ax[1].scatter([x[0] for x in hits], [x[1] for x in hits], label=plane, color=c, s=1)
+        #ax[1].scatter([x[0] for x in hits], [x[1] for x in hits], label=plane, color=c, s=1)
+        ax.scatter([x[0] for x in hits], [x[1] for x in hits], label=plane, color=c, s=1)
 
         total_time_range = max([max(p_times) for p_times in plane_times.values()])\
                            - min([min(p_times) for p_times in plane_times.values()])
 
-        total_secs = total_time_range / 7.8E7
+        # DAQ boards have a 80MHz insternal clock
+        total_secs = total_time_range / 8E7 
+
+
+    projections = []
+    print("calculated position error", pos_err)
+    for x0,y0 in plane_hits[planes_sorted[0]]:
+        for x1, y1 in plane_hits[planes_sorted[1]]:
+            x3 = (z1 + z2) / (z2 - z1) * (x1 - x0) + x0
+            y3 = (z1 + z2) / (z2 - z1) * (y1 - y0) + y0
+
+            projections.append(plt.Circle((x3,y3), radius=pos_err, linewidth=0))
+
+            #ax[1].scatter(x3, y3, label="plane 3 extrapolated", color=colors[2], s=45, alpha=0.1)
+            #ax.scatter(x3, y3, label="plane 3 extrapolated", color=colors[2], s=45, alpha=0.1)
+    c = matplotlib.collections.PatchCollection(projections, label="plane 3 extrapolated", color=colors[2], alpha=0.1)
+    ax.add_collection(c)
+
      
-        fig.suptitle(f"Event number {iev}\n {total_hits} hits, Timespan {total_time_range} ~ {total_secs}s")
-    ax[0].legend()
-    ax[1].legend()
-    ax[1].set_xlim(0,1024)
-    ax[1].set_ylim(512,0)
-    fig.savefig(f"track_plots/event{iev}.png", dpi=200)
+    fig.suptitle(f"Event number {iev}\n {total_hits} hits, Timespan {total_time_range} ~ {total_secs}s")
+
+    # Single plot
+    ax.legend()
+    ax.set_xlim(0,1024)
+    ax.set_ylim(512,0)
+
+    # Two plots
+    #ax[0].legend()
+    #ax[1].legend()
+    #ax[1].set_xlim(0,1024)
+    #ax[1].set_ylim(512,0)
+
+    fig.savefig(f"track_plots_0deg/event{iev}.png", dpi=200)
     plt.show()
 
 
