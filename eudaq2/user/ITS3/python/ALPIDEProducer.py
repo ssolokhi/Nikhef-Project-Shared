@@ -66,6 +66,7 @@ class ALPIDEProducer(pyeudaq.Producer):
 # ADDED
         self.starttime = 0 
         self.selftrigger=False
+        self.duration = 600 #10 minutes
 
     @exception_handler
     def DoInitialise(self):
@@ -193,9 +194,9 @@ class ALPIDEProducer(pyeudaq.Producer):
                     self.send_status_event(tlast)
                     self.isev+=1
 
-            # ADDED TO RUN FOR 1 minute
+            # ADDED TO RUN FOR X amount of seconds
             if self.selftrigger and self.starttime:
-                if (time() - self.starttime) < 600:
+                if (time() - self.starttime) < self.duration:
                     self.daq.trgseq.start.issue()
 
         self.send_status_event(datetime.now())
